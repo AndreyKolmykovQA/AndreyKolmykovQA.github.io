@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrey kolmykov</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Андрей Колмыков</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">Обо мне</a></li>
+                <li><a href="#experience">Опыт</a></li>
+                <li><a href="#projects">Проекты</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Андрей Колмыков</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">Обо Мне</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Опыт</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Проекты</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Контакты</a></li>
+        </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./Assets/profile-pic.png" alt="Andrey's Profile Picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Приввет! Меня зовут</p>
+            <h1 class="title">Андрей Колмыков</h1>
+            <p class="section__text__p2">QA Engineer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" 
+                onclick="window.open('./Assets/resume-example.pdf')"
+                >Резюме
+                </button>
+                <button 
+                class="btn btn-color-1" 
+                onclick="location.href=('./#contact')"
+                >Связаться
+                </button>
+            </div>
+            <div id="socials-container">
+                <img src="./Assets/linkedin.png" 
+                alt="My LinkedIn" 
+                class="icon" 
+                onclick="location.href='https://linked.com/'">
+                <img src="./Assets/github.png" 
+                alt="My GitHub" 
+                class="icon" 
+                onclick="location.href='https://github.com/'">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Узнайте больше</p>
+        <h1 class="title">Обо мне</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./Assets/IMG_6897.jpg" 
+                alt="Profile picture"
+                class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./Assets/experience.png" 
+                        alt="Experience icon"
+                        class="icon">
+                        <h3>Опыт</h3>
+                        <p>Здесь будет <br>очень изящно придуманный опыт</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./Assets/education.png" 
+                        alt="Education icon"
+                        class="icon">
+                        <h3>Образование</h3>
+                        <p>Три двойки<br> по окрущающему миру</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>Здесь будет параграф с очень big и important достижениями</p>
+                </div>
+            </div>
+        </div>
+        <img src="./Assets/arrow.png" 
+        alt="arrow icon" class="icon arrow" 
+        onclick="location.href='./#experience'">
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Узнайте больше</p>
+        <h1 class="title">О моем опыте</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Manual QA</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./Assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon">
+                            <div>
+                                <h3>Git</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./Assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon">
+                            <div>
+                                <h3>Grafana</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./Assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon">
+                            <div>
+                                <h3>Qase.io</h3>
+                                <p>TMS-система</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./Assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon">
+                            <div>
+                                <h3>PostgreSQL</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./Assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon">
+                            <div>
+                                <h3>SOAP UI</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./Assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon">
+                            <div>
+                                <h3>Kibana</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./Assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon">
+                            <div>
+                                <h3>Charles</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./Assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon">
+                            <div>
+                                <h3>Postman</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">QA Automation</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./Assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon">
+                            <div>
+                                <h3>Cypress</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./Assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon">
+                            <div>
+                                <h3>Jmeter</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./Assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon">
+                            <div>
+                                <h3>Pytest</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./Assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon">
+                            <div>
+                                <h3>Selenium</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./Assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon">
+                            <div>
+                                <h3>Allure</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./Assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon">
+                            <div>
+                                <h3>Python</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img 
+        src="./Assets/arrow.png" 
+        alt="arrow icon" 
+        class="icon arrow" 
+        onclick="location.href='./#projects'">
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Мои недавние</p>
+        <h1 class="title">Проекты</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./Assets/project-11.png" 
+                    alt="Project 1"
+                    class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Раз</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://github.com/AndreyKolmykovQA'">
+                        Сайт
+                    </button>
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://github.com/AndreyKolmykovQA'">
+                        Подробнее
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./Assets/project-12.png" 
+                    alt="Project 2"
+                    class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Два</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://github.com/AndreyKolmykovQA'">
+                        Сайт
+                    </button>
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://github.com/AndreyKolmykovQA'">
+                        Подробнее
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./Assets/project-13.png" 
+                    alt="Project 3"
+                    class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Три</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://github.com/AndreyKolmykovQA'">
+                        Сайт
+                    </button>
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://github.com/AndreyKolmykovQA">
+                        Подробнее
+                    </button>
+                </div>
+            </div></div>
+        </div>
+        <img 
+        src="./Assets/arrow.png" 
+        alt="arrow icon" 
+        class="icon arrow" 
+        onclick="location.href='./#contact'">
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Если все понравилось</p>
+        <h1 class="title">Контакты</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./Assets/email.png" 
+                alt="email icon"
+                class="icon contact-icon email-icon">
+                <p>
+                    <a href="mailto:a.kolmykov1@yandex.ru">a.kolmykov1@yandex.ru</a>
+                </p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./Assets/linkedin.png" 
+                alt="linkedin icon"
+                class="icon contact-icon">
+                <p>
+                    <a href="https://www.linkedin.com/">LinkedIn</a>
+                </p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">Обо мне</a></li>
+                    <li><a href="#experience">Опыт</a></li>
+                    <li><a href="#projects">Проекты</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Андрей Колмыков 2023</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
